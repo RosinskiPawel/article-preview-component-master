@@ -33,7 +33,7 @@ html {
   justify-items: center;
   justify-content: center;
   background-color: $light-Grayish-Blue;
-  padding: 75px 25px 80px 25px;
+  padding: 70px 25px 80px 25px;
   position: relative;
 }
 .main-card {
@@ -47,10 +47,13 @@ html {
 }
 picture > img {
   width: 330px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  position: absolute;
-  z-index: 2;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+  //   position: absolute;
+  //   z-index: 2;
+
+  clip-path: inset(15px 0px round 10px);
 }
 
 .description {
