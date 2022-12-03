@@ -66,6 +66,16 @@ picture > img {
 .author {
   display: flex;
   flex-direction: row;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 465px;
+  height: 70px;
+  width: 330px;
+  z-index: 4;
+  position: absolute;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .author > img {
@@ -79,7 +89,7 @@ picture > img {
   flex-direction: column;
   justify-items: baseline;
   line-height: 20px;
-  padding-left: 20px;
+  padding-left: 15px;
 }
 
 h1 {
@@ -96,10 +106,6 @@ p {
   color: #6d7f97;
 }
 
-.author {
-  margin-top: 30px;
-}
-
 .author-name {
   font-weight: 700;
 }
@@ -113,8 +119,9 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 30px;
-  height: 30px;
+  margin-top: 5px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   background-color: #ecf2f8;
   margin-left: 70px;
