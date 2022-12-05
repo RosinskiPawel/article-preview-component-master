@@ -47,18 +47,19 @@ html {
 }
 picture > img {
   width: 330px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  //   border-top-left-radius: 20px;
+  //   border-top-right-radius: 20px;
 
   //   position: absolute;
   //   z-index: 2;
 
   clip-path: inset(15px 0px round 10px);
+  //   clip-path: inset(15px 0px 50px round 10px 10px 0px 0px);
 }
 
 .description {
   position: absolute;
-  top: 220px;
+  top: 218px;
   padding: 40px 30px;
   height: 315px;
   width: 330px;
@@ -73,7 +74,6 @@ picture > img {
   padding-top: 10px;
   padding-left: 30px;
   padding-right: 30px;
-
   margin-top: 465px;
   height: 70px;
   width: 330px;
@@ -86,6 +86,7 @@ picture > img {
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  display: block;
 }
 .name_and_date {
   display: flex;

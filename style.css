@@ -45,14 +45,12 @@ html {
 
 picture > img {
   width: 330px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
   clip-path: inset(15px 0px round 10px);
 }
 
 .description {
   position: absolute;
-  top: 220px;
+  top: 218px;
   padding: 40px 30px;
   height: 315px;
   width: 330px;
@@ -81,6 +79,7 @@ picture > img {
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  display: block;
 }
 
 .name_and_date {
