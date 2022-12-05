@@ -29,7 +29,7 @@ html {
   justify-items: center;
   justify-content: center;
   background-color: #ecf2f8;
-  padding: 70px 25px 80px 25px;
+  padding: 60px 25px 80px 25px;
   position: relative;
 }
 
@@ -66,7 +66,7 @@ picture > img {
   padding-top: 10px;
   padding-left: 30px;
   padding-right: 30px;
-  margin-top: 465px;
+  margin-top: 463px;
   height: 70px;
   width: 330px;
   z-index: 4;
@@ -123,4 +123,42 @@ p {
   border-radius: 50%;
   background-color: #ecf2f8;
   margin-left: 70px;
+}
+
+.author_after-click {
+  display: none;
+}
+
+.grey-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  padding-left: 30px;
+  top: 463px;
+  background-color: #48556a;
+  color: #9eafc2;
+  letter-spacing: 3px;
+  position: absolute;
+  z-index: 5;
+  height: 70px;
+  width: 330px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+#grey-arrow {
+  background-color: #6d7f97;
+  margin-left: 50px;
+}
+
+#newarrow {
+  filter: brightness(3);
 }

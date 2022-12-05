@@ -33,7 +33,7 @@ html {
   justify-items: center;
   justify-content: center;
   background-color: $light-Grayish-Blue;
-  padding: 70px 25px 80px 25px;
+  padding: 60px 25px 80px 25px;
   position: relative;
 }
 .main-card {
@@ -41,6 +41,7 @@ html {
   height: 515px;
   display: flex;
   flex-direction: column;
+
   border-radius: 10px;
   position: relative;
   z-index: 1;
@@ -74,7 +75,7 @@ picture > img {
   padding-top: 10px;
   padding-left: 30px;
   padding-right: 30px;
-  margin-top: 465px;
+  margin-top: 463px;
   height: 70px;
   width: 330px;
   z-index: 4;
@@ -125,4 +126,38 @@ p {
   border-radius: 50%;
   background-color: $light-Grayish-Blue;
   margin-left: 70px;
+}
+
+.author_after-click {
+  display: none;
+}
+.grey-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  padding-left: 30px;
+  top: 463px;
+  background-color: $very-Dark-Grayish-Blue;
+  color: $grayish-Blue;
+  letter-spacing: 3px;
+  position: absolute;
+  z-index: 5;
+  height: 70px;
+  width: 330px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+#grey-arrow {
+  background-color: $desaturated-Dark-Blue;
+  margin-left: 50px;
+}
+#newarrow {
+  filter: brightness(3);
 }
