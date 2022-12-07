@@ -24,7 +24,7 @@ html {
   min-height: 100vh;
   background-color: black;
 }
-.white-card {
+.c-white {
   width: 375px;
   height: 670px;
   display: flex;
@@ -36,7 +36,7 @@ html {
   padding: 60px 25px 80px 25px;
   position: relative;
 }
-.main-card {
+.c-white__main {
   width: 330px;
   height: 515px;
   display: flex;
@@ -46,7 +46,7 @@ html {
   position: relative;
   z-index: 1;
 }
-picture > img {
+.c-white__picture {
   width: 330px;
   //   border-top-left-radius: 20px;
   //   border-top-right-radius: 20px;
@@ -69,7 +69,7 @@ picture > img {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-.author {
+.author-before {
   display: flex;
   flex-direction: row;
   padding-top: 10px;
@@ -83,39 +83,39 @@ picture > img {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-.author > img {
+.author-before__roundpic {
   border-radius: 50%;
   width: 40px;
   height: 40px;
   display: block;
 }
-.name_and_date {
+.author-before__info {
   display: flex;
   flex-direction: column;
   justify-items: baseline;
   line-height: 20px;
   padding-left: 15px;
 }
-h1 {
+.header-text {
   color: $very-Dark-Grayish-Blue;
   font-size: 1.3rem;
   font-weight: 700;
   padding-bottom: 1rem;
   line-height: 25px;
 }
-p {
+.paragraphs {
   font-size: 1.1rem;
   line-height: 20px;
   color: $desaturated-Dark-Blue;
 }
 
-.author-name {
+.author-before__info--name {
   font-weight: 700;
 }
-.author-date {
+.author-before__info--date {
   color: $grayish-Blue;
 }
-.arrow-share {
+.author-before__arrow {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -128,10 +128,10 @@ p {
   margin-left: 70px;
 }
 
-.author_after-click {
+.author-after {
   display: none;
 }
-.grey-button {
+.author-after__sharefild {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -149,15 +149,22 @@ p {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-.icons {
+.author-after__icons {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
-#grey-arrow {
+.author-after__arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
   background-color: $desaturated-Dark-Blue;
   margin-left: 50px;
 }
-#newarrow {
+.author-after__arrow--newarrow {
   filter: brightness(3);
 }
