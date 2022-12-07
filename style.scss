@@ -48,12 +48,6 @@ html {
 }
 .c-white__picture {
   width: 330px;
-  //   border-top-left-radius: 20px;
-  //   border-top-right-radius: 20px;
-
-  //   position: absolute;
-  //   z-index: 2;
-
   clip-path: inset(15px 0px round 10px);
   //   clip-path: inset(15px 0px 50px round 10px 10px 0px 0px);
 }
@@ -167,4 +161,7 @@ html {
 }
 .author-after__arrow--newarrow {
   filter: brightness(3);
+}
+
+@media only screen and (min-width: 1440px) {
 }
