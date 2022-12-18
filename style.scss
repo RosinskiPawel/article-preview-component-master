@@ -51,7 +51,10 @@ html {
   clip-path: inset(15px 0px round 10px);
   //   clip-path: inset(15px 0px 50px round 10px 10px 0px 0px);
 }
-
+.c-white__text {
+  position: relative;
+  top: -268px;
+}
 .description {
   position: absolute;
   top: 218px;
@@ -59,7 +62,7 @@ html {
   height: 315px;
   width: 330px;
   background-color: white;
-  z-index: 3;
+  z-index: 2;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -72,7 +75,7 @@ html {
   margin-top: 463px;
   height: 70px;
   width: 330px;
-  z-index: 4;
+  z-index: 3;
   position: absolute;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -164,5 +167,15 @@ html {
 }
 
 @media only screen and (min-width: 1440px) {
+  .c-white {
+    width: 1440px;
+    height: 800px;
+  }
+
+  .c-white__main {
+    width: 730px;
+    height: 280px;
+    display: flex;
+    flex-direction: row;
+  }
 }
-data-balloon-pos
