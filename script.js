@@ -1,34 +1,29 @@
-const autor = document.querySelector('.author-before')
-const newAutor = document.querySelector('.author-after')
+const designer = document.querySelector('.designer')
+const sharefield = document.querySelector('.box-sharefield')
 
-// autor.addEventListener('click', function () {
-//   newAutor.style.display = 'block'
-// })
-// newAutor.addEventListener('click', function () {
-//   newAutor.style.display = ''
-// })
+const clickArrow = designer.querySelector('.designer__arrow')
+const clickNewArrow = sharefield.querySelector('.sharefield__arrow')
+const mediaQuery = window.matchMedia('(max-width: 700px)')
+const arrow = document.querySelector('.first-arrow')
 
-// const autor = document.querySelector('.author-before')
+if (mediaQuery.matches) {
+  designer.addEventListener('mouseover', function () {
+    sharefield.style.display = 'block'
+  })
 
-// function greyshare() {
-//   autor.classList.toggle('author-after')
-// }
-const clickArrow = autor.querySelector('.author-before__arrow')
-const clickNewArrow = newAutor.querySelector('.author-after__arrow')
-// const text = document.querySelector('.header-text')
-// function changeColor() {
-//   text.style.color = 'red'
-// }
+  sharefield.addEventListener('mouseout', function () {
+    sharefield.style.display = ''
+  })
+} else {
+  designer.addEventListener('mouseover', function () {
+    sharefield.style.display = 'block'
+    clickArrow.style.backgroundColor = 'hsl(214, 17%, 51%)'
+    arrow.classList.add('new-arrow')
+  })
 
-// clickArrow.addEventListener('click', function () {
-//   newAutor.style.display = 'block'
-// })
-// clickNewArrow.addEventListener('click', function () {
-//   newAutor.style.display = ''
-// })
-function showShare() {
-  newAutor.style.display = 'block'
-}
-function hideShare() {
-  newAutor.style.display = ''
+  designer.addEventListener('mouseout', function () {
+    sharefield.style.display = ''
+    clickArrow.style.backgroundColor = ''
+    arrow.classList.remove('new-arrow')
+  })
 }
